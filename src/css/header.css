@@ -1,0 +1,95 @@
+.menu_open {
+  display: none;
+}
+.menu_open img {
+  cursor: pointer;
+}
+.container {
+  padding: 0 2%;
+  display: flex;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  justify-content: space-between;
+  left: 0;
+  background: black;
+  right: 0;
+  top: 0;
+  z-index: 2000;
+}
+
+.menu a > img {
+  width: 28px;
+}
+.menu a {
+  color: #fffe;
+  font-size: 15px;
+  text-decoration: none;
+  margin-right: 25px;
+  transition: color 0.2 ease-in;
+  font-weight: 600;
+}
+.menu a:hover,
+.menu a:focus {
+  color: #5ba0c8;
+}
+.logo {
+  padding: 0 50 0 20px;
+}
+
+.logo img {
+  width: 25rem;
+}
+.container .open-menu {
+  display: none;
+}
+.view_menu {
+  background: white;
+  display: none;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.view_menu section {
+  height: calc(100% + 10rem);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.view_menu section a {
+  font-size: 1.4rem;
+  color: inherit;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  transition: background 0.2s;
+}
+.view_menu section a:not(:nth-child(n + 6)):hover {
+  background: #2f2f2f63;
+}
+.view_menu section a + a {
+  margin-top: 1.5rem;
+}
+.view_menu section img {
+  filter: invert(1);
+}
+.view_menu section .social_media {
+  margin-top: 2rem;
+}
+
+.view_menu section .social_media a:hover {
+  background: nonex;
+}
+@media (max-width: 1050px) {
+  .menu {
+    display: none;
+  }
+}

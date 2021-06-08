@@ -1,0 +1,114 @@
+.container-home1 {
+    background-color: #fff;
+}
+.img-tenis{
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem 0 0 0;
+    flex-wrap: wrap;
+}
+
+.container-home2 {
+    background-color: #000000;
+}
+.banner, .banner1{
+    background:url(../img/banner.jpg) no-repeat;
+    background-size: cover;
+    min-height: 350px;
+    min-width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 5rem;
+    white-space: nowrap;
+
+}
+.texto {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+#banner1 {
+    font-size: 2rem;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+.perguntas {
+    display: flex;
+    color: #fff;
+    margin-top: 75px;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+}
+.pergunta1, .open {
+    border-bottom: 1px solid #e1e1e1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem  0;
+}
+.respostas {
+    margin-top: 0.5rem;
+    overflow: hidden;
+    height: 0px;
+    transition: all 0.2s ease-in;
+}
+/* tela 3 */
+.container-home2 {
+    color: #fff;
+    display: grid;
+}
+.container-home2 input {
+    border-bottom-color: #CCC;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    margin-bottom: 10px; 
+}
+.container-perguntas {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+/* Tela 3 */
+.container-home3 {
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+#show_feedback {
+    color: #fff;
+    margin-top: 150px;
+}
+.container-home3 section:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.container-home3 section:nth-child(1) form {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    color: #fff;
+    margin-top: 150px;
+}
+@media(max-width: 1000px) {
+    .banner, .banner1 {
+        object-fit: contain;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+    .texto {
+        display: flex;
+        align-items: center;
+        font-size: 1.3rem;
+    }
+}

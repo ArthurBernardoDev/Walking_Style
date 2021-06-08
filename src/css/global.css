@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  background-color: #000911;
+  padding: 20px 0;
+  height: 10rem;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+body {
+  background-color: #111;
+  position: relative;
+}
+
+footer{
+  text-align:right;
+  color:white;
+  font-size:17px;
+  background-color:#000 ;
+}
+
+footer a{
+  text-decoration:none;
+}
+  
+footer p{
+  padding:10px;
+}
+@media (max-width: 1000px) {
+  html {
+    font-size: 87.56%;
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 65%;
+  }
+}
+

@@ -1,0 +1,87 @@
+.container-tela1 {
+    height: calc(100vh - 10rem);
+    display: grid;
+    grid-template-columns: minmax(20rem, 70rem) 1fr;
+    background-color: #000;
+    color: white;
+}
+.container-tela1 section:nth-child(1)  {
+  height: 100%;
+  overflow-y: auto;
+  padding: 0 2rem
+}
+.container-tela1 section:nth-child(1)::-webkit-scrollbar {
+  width: 7px;
+  padding: 0 2px;
+  background: #fff;
+}
+.container-tela1 section:nth-child(1)::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+.container-tela1 section:nth-child(1) .jordan1 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border: 2px solid #000911;
+  border-radius: 13px;
+  background-color: #000911;
+  border-radius: 25px;
+}
+
+.container-tela1 section:nth-child(1) .jordan1 + .jordan1 {
+  margin-top: 1rem;
+}
+  
+/* TELA 2 */
+.jordan1 div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.3rem; 
+}
+.jordan1 div span + span {
+  margin-top: 0.7rem;
+}
+
+.jordan1 div span:nth-child(1){
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.jordan1 div span:nth-child(2) {
+  font-size: 1.15;
+  font-weight: 500;
+}
+.jordan1 div span:last-child{
+  color: #b4b0b0
+}
+.container-tela1 section:nth-child(2) img { 
+  width: 100%;
+  height: calc(100vh - 10.5rem);
+  object-fit: cover;
+}
+
+@media (max-width: 1000) {
+  .banner_tenis {
+    display: none;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  .container-tela1 section:nth-child(1) .jordan1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem 1rem 1rem;
+  }
+  .container-tela1 section:nth-child(1) .jordan1 + .jordan1 {
+    margin-top: 1.2rem;
+  }
+  .container-tela1 section:nth-child(1) .jordan1 div span:nth-child(1){
+   
+    font-size: 2rem
+  }
+  .container-tela1 section:nth-child(1) .jordan1 div{
+    margin-top: 1rem;
+    font-size: 1.5rem
+  }
+}
