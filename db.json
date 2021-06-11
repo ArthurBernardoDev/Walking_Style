@@ -1,0 +1,14 @@
+{
+    "feedbacks": [
+        {
+            "id": "1",
+            "nome": "Arthur Bernardo",
+            "comentario": "Muito bom!!"
+        },
+        {
+            "id": "2",
+            "nome": "Arthur Ferrarez",
+            "comentario": "Gostei muito!"
+        }
+    ]
+}

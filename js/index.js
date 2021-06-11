@@ -1,5 +1,4 @@
 const list = document.querySelectorAll(".container-perguntas section");
-const button = document.querySelector("#button");
 const menu = document.querySelector(".menu_open");
 const view_menu = document.querySelector(".view_menu");
 list.forEach((element) => {
@@ -19,25 +18,6 @@ list.forEach((element) => {
       ? (element.children[1].style.height = "0px")
       : (element.children[1].style.height = `${sizep.clientHeight * 1.1}px`);
   });
-});
-button.addEventListener("click", () => {
-  const name = document.querySelector("#name").value;
-  const description = document.querySelector("#description").value;
-  const feedback = document.querySelector("#feedback").value;
-
-  const value = JSON.stringify({ name, description, feedback });
-  window.localStorage.setItem("walking_style", value);
-});
-
-window.addEventListener("load", () => {
-  const item = window.localStorage.getItem("walking_style");
-  const { name, description, feedback } = JSON.parse(item);
-  const show = document.querySelector("#show_feedback");
-  show.innerHTML = `<h3>${name}</h3>
-    <p>${description}</p>
-    <p>${feedback} ⭐ </p>
-    `;
-  console.log({ name, description, feedback });
 });
 
 window.addEventListener("resize", (e) => {
