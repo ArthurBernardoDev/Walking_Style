@@ -168,24 +168,32 @@
           </div>
         </section>
       </div>
-    </div>
-    <div class="container-home3">
-      <section>
-        <form>
-          <span>Nome:</span>
-          <input type="text" id="name" placeholder="Digite seu nome" />
-          <span>comentario: </span>
-          <textarea
-            placeholder="Digite seu comentario"
-            id="description"
-          ></textarea>
-          <input type="range" id="feedback" min="0" max="5" />
-          <button type="button" id="button">Enviar</button>
-        </form>
-      </section>
-      <section>
-        <div id="show_feedback"></div>
-      </section>
+      <div class="container-home3">
+        <section class="inputs">
+          <form>
+            <div class="spans">
+            <span>Nome:</span>
+            <input type="text" id="name" placeholder="Digite seu nome" />
+          </div>
+          <div class="spans">
+            <span>Comentario: </span>
+            <textarea
+              placeholder="Digite seu comentario"
+              id="description"
+            ></textarea>
+          </div>
+          <div class="spans">
+            <span>Avaliação</span>
+            <input type="range" id="feedback" min="0" max="5" />
+          </div>
+            <button type="button" id="button">Enviar</button>
+          </form>
+        </section>
+        <section>
+          <div id="show_feedback"></div>
+          <div id="id_prod"></div>
+        </section>
+      </div>
     </div>
     <script src="./js/index.js"></script>
     <script src="./js/json.js"></script>

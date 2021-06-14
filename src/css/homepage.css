@@ -76,15 +76,21 @@
 }
 /* Tela 3 */
 .container-home3 {
-    height: 100vh;
+    min-width: 1250px;
+    margin: 0 auto;
     background-color: black;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    
 }
 #show_feedback {
     color: #fff;
-    margin-top: 150px;
+    height: 30rem;
+    overflow-y: auto;
+
+}
+#show_feedback::-webkit-scrollbar {
+    display: none;
 }
 .container-home3 section:nth-child(1) {
     display: flex;
@@ -111,4 +117,89 @@
         align-items: center;
         font-size: 1.3rem;
     }
+}
+.comentario {
+    width: 20rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #000911;
+
+}
+.comentario + .comentario {
+    margin-top: 0.8rem;
+
+}
+.content_feedback {
+    display: flex;
+    margin: 0.5rem 0;
+
+}
+.content_feedback > span:nth-child(1) {
+    margin-right: 1rem;
+    
+}
+#deletar {
+    padding: 0.3rem 1rem;
+    background-color: rgb(255, 37, 37);
+    cursor: pointer;
+    border-radius: 0.4rem;
+    transition: backgroud-color 0.2s;
+}
+#deletar:hover {
+    background-color: rgb(253, 0, 0);
+}
+.inputs {
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000911;
+    width: 25rem;
+}
+.inputs > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.inputs > form .spans {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.spans + .spans {
+    margin-top: 0.8rem;
+
+}
+.spans > input {
+    height: 2rem;
+    border-radius: 0.4rem;
+    border: none;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+}
+.spans > textarea {
+    height: 4rem;
+    border-radius: 0.4rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+}
+.spans > span {
+    margin-bottom: 0.3rem;
+}
+form > button {
+    height: 2.5rem;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: rgb(11, 64, 85);
+    color: white;
+    font-size: 1.2rem;
+    transition: backgroud-color 0.2s;
+    cursor: pointer;
+}
+form > button:hover {
+    background-color: rgb(5, 39, 53);
 }
