@@ -33,6 +33,12 @@ footer p{
   html {
     font-size: 87.56%;
   }
+  .menu_open {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
 }
 
 @media (max-width: 700px) {

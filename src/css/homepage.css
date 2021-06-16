@@ -76,7 +76,7 @@
 }
 /* Tela 3 */
 .container-home3 {
-    min-width: 1250px;
+    width: 100%;
     margin: 0 auto;
     background-color: black;
     display: flex;
@@ -102,7 +102,6 @@
     flex-direction: column;
     margin: 15px;
     color: #fff;
-    margin-top: 150px;
 }
 @media(max-width: 1000px) {
     .banner, .banner1 {
@@ -202,4 +201,25 @@ form > button {
 }
 form > button:hover {
     background-color: rgb(5, 39, 53);
+}
+@media(max-width: 500px) {
+    .container-home3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .container-home3 section:nth-child(1) {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .container-home3 section:nth-child(2) {
+        width: 100%;
+    }
+    .container-home3 section:nth-child(2) #show_feedback {
+        width: 100%;
+    }
+    .container-home3 section:nth-child(2) #show_feedback  div{
+        width: 100%;
+    }
 }

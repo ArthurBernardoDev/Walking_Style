@@ -88,8 +88,4 @@
 .view_menu section .social_media a:hover {
   background: nonex;
 }
-@media (max-width: 1050px) {
-  .menu {
-    display: none;
-  }
-}
+
