@@ -17,7 +17,6 @@ A Walking Style é uma loja virtual que trabalha com o comércio por encomenda d
 - Arthur Bernardo de Almeida Simões
 - Arthur Fernandes Roque Ferrarez
 - Gabriel Santos Pereira
-- Miguel Ilidio Menezes de Souza
 
 ## Professor
 
