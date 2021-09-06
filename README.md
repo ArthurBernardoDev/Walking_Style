@@ -7,7 +7,6 @@
 `PROJETO: DESENVOLVIMENTO DE APLICAÇÃO WEB FRONT-END`
 
 
- ![Simbolo Walking Style](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-1-e1-proj-web-t1-walkstyle/blob/src/main/docs/img/Simbolo_WalkingStyle.png?raw=true)
 
 A Walking Style é uma loja virtual que trabalha com o comércio por encomenda de tênis esportivos de alto luxo, atendendo ao público interessado em produtos exclusivos, estilosos e com a qualidade das maiores grifes internacionais. Ande com estilo, Walking Style.
 
